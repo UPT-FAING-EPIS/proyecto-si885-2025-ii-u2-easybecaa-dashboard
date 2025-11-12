@@ -1,107 +1,103 @@
 [![Review Assignment Due Date](https://classroom.github.com/assets/deadline-readme-button-22041afd0340ce965d47ae6ef1cefeee28c7c493a6346c4f15d667ab976d596c.svg)](https://classroom.github.com/a/VMb-1xPS)
 [![Open in Codespaces](https://classroom.github.com/assets/launch-codespace-2972f46106e565e64193e422d61a12cf1da4916b45550586e14ef0a7c637dd04.svg)](https://classroom.github.com/open-in-codespaces?assignment_repo_id=20268708)
 # 🎓 Proyecto de Inteligencia de Negocios  
-**Análisis de Requisitos y Nivel de Dificultad en Becas Universitarias del Perú**  
-
+**Análisis de Becas y Caracterización de Becarios en el Perú**  
 📍 **Universidad Privada de Tacna**  
 **Facultad de Ingeniería – Escuela Profesional de Ingeniería de Sistemas**  
-
 ---
-
 ## 👥 Integrantes del Equipo  
 - Calizaya Ladera, Andy Michael
 - Vargas Gutierrez, Angel Jose
 - Colque Ponce, Sergio Alberto
 - Castillo Mamani, Diego Fernadinho
-
 ---
-
 ## ❗ Problemática  
-Las becas universitarias en el Perú representan una oportunidad crucial para jóvenes con talento académico y limitaciones económicas. Sin embargo, la información sobre **requisitos, procesos de postulación y beneficios** suele estar dispersa en múltiples documentos (PDFs, convocatorias web, APIs de PRONABEC), lo que dificulta evaluar:  
-
-- ¿Qué beca es más accesible según el perfil del estudiante?  
-- ¿Qué nivel de dificultad implica postular a cada una?  
-- ¿Cuáles son las principales variables (académicas, socioeconómicas, cobertura) que influyen en la obtención de la beca?  
-
+Las becas universitarias en el Perú representan una oportunidad crucial para jóvenes con talento académico y limitaciones económicas. Sin embargo, la información sobre **distribución de becas, caracterización de becarios y cobertura institucional** está dispersa en múltiples fuentes (PDFs, convocatorias web, APIs de PRONABEC), lo que dificulta evaluar:  
+- ¿Cuáles son las carreras y programas con mayor demanda de becas?
+- ¿Qué instituciones ofrecen más oportunidades de becas?
+- ¿Cuál es el perfil socioeconómico y demográfico de los becarios?
+- ¿Cómo se distribuyen geográficamente las becas en el territorio nacional e internacional?
 ---
-
 ## 🎯 Objetivo General  
-Analizar y medir el **nivel de dificultad de postulación (IDB)** en becas universitarias del Perú, integrando requisitos académicos, socioeconómicos y cobertura, mediante un enfoque de Inteligencia de Negocios.  
-
+Analizar y visualizar la **distribución, caracterización y cobertura** de becas de apoyo en el Perú durante el período 2020-2025, mediante un enfoque de Inteligencia de Negocios que permita identificar patrones, tendencias y oportunidades de acceso.
 ---
-
 ## ✅ Objetivos Específicos  
-- Recolectar información real de becas (ej. **Beca BCP, PRONABEC, Beca Presidente de la República**).  
-- Clasificar los requisitos en dimensiones (académicos, socioeconómicos, documentos, idioma, etc.).  
-- Calcular un **Índice de Dificultad de Beca (IDB)** basado en KPIs predefinidos.  
-- Diseñar dashboards interactivos que permitan comparar becas según nivel de dificultad, cobertura y beneficios.  
-- Proveer un sistema de apoyo para que los estudiantes identifiquen qué becas son más accesibles a su perfil.  
-
+- Recolectar y consolidar información de becas de programas como **PRONABEC, Generación del Bicentenario, Becas Chevening, Fulbright** y otros.
+- Analizar la distribución de becas por **carrera profesional, institución educativa y ubicación geográfica**.
+- Caracterizar el perfil de los becarios según **género, estrato socioeconómico y procedencia**.
+- Identificar las **instituciones con mayor número de becas otorgadas** (universidades nacionales, privadas e institutos técnicos).
+- Diseñar dashboards interactivos que permitan visualizar tendencias temporales (2020-2025) y distribución geográfica nacional e internacional.
+- Proveer información estratégica para la toma de decisiones de estudiantes, familias y entidades educativas.
 ---
-
 ## 🛠️ Tecnologías Utilizadas  
-- **Lakehouse (Delta Lake / Databricks / Apache Iceberg)** → Integración de datos crudos (PDFs, CSV, APIs) y estructurados.  
 - **Python 🐍** → Procesamiento y análisis de datos (pandas, numpy, PyPDF, requests).  
-- **PostgreSQL 🐘** → Almacenamiento estructurado de la información de becas.  
-- **Power BI 📊** → Dashboards interactivos para visualización de métricas.  
-
+- **MySQL 🗄️** → Almacenamiento estructurado de la información de becas y becarios.  
+- **Power BI 📊** → Dashboards interactivos para visualización de métricas y análisis temporal.  
 ---
-
 ## 📡 Metodología  
-
 ### 1. Extracción de datos  
-- Recolección de convocatorias en **PDFs y sitios web** oficiales.  
-- Obtención de datos de **APIs de PRONABEC y universidades**.  
-
+- Recolección de datos históricos 2020-2025 de **convocatorias PRONABEC**.  
+- Obtención de información de **APIs oficiales y dashboards públicos** de becas.
+- Web scraping de portales educativos y documentos oficiales.
 ### 2. Procesamiento y limpieza  
-- Conversión de requisitos a tablas normalizadas.  
-- Clasificación en categorías:  
-  - Requisitos académicos  
-  - Socioeconómicos  
-  - Documentos obligatorios  
-  - Idiomas  
-  - Beneficios y cobertura  
-
+- Normalización de datos de becas por año.
+- Clasificación por categorías:  
+  - **Tipo de beca**: Pregrado, Posgrado Maestría, Posgrado Doctorado, Especiales
+  - **Institución**: Universidades públicas/privadas, institutos técnicos, universidades internacionales
+  - **Ubicación**: Departamentos del Perú y países para becas internacionales
+  - **Perfil del becario**: Género, estrato socioeconómico (Pobre, Pobre Extremo, No Pobre)
+  - **Carrera**: Áreas de estudio y programas académicos
 ### 3. Cálculo de KPIs  
-- **Promedio mínimo exigido**  
-- **Condición socioeconómica**  
-- **Documentación requerida**  
-- **Cobertura de beneficios**  
-- **Duración y etapas del proceso**  
-
-### 4. Índice de Dificultad de Beca (IDB)  
-Se construye a partir de ponderaciones de cada KPI.  
-Ejemplo:  
-IDB = (0.3 * Académicos) + (0.3 * Socioeconómicos) + (0.2 * Documentos) + (0.2 * Otros)
-
+- **Total de becas otorgadas por año**
+- **Distribución por género**
+- **Distribución por estrato socioeconómico**
+- **Top instituciones con mayor número de becas**
+- **Carreras más demandadas**
+- **Cobertura geográfica nacional e internacional**
+### 4. Análisis Multidimensional
+- **Temporal**: Evolución de becas 2020-2025
+- **Geográfico**: Distribución por departamentos y países
+- **Institucional**: Universidades vs Institutos Técnicos vs Programas Internacionales
+- **Demográfico**: Caracterización de becarios
+- **Académico**: Análisis por tipo de programa y carrera
 ### 5. Visualización en Power BI  
-- Comparación entre becas (IDB).  
-- Ranking de becas según accesibilidad.  
-- Mapas de cobertura geográfica.  
-- Evolución histórica de convocatorias.  
-
+- **Becas de Apoyo**: Análisis por carrera, institución y tipo de beca
+- **Mapa de Becas**: Distribución geográfica nacional e internacional
+- **Caracterización de Becarios**: Perfiles demográficos y socioeconómicos
+- **Top de Universidades**: Ranking de instituciones con mayor cobertura
+- **Filtros interactivos**: Por año (2020-2025), categoría y carrera
 ---
+## 📊 Visualizaciones Implementadas
 
-## 📊 Ejemplo de Visualizaciones  
-- 📈 **Gráfico comparativo**: Becas ordenadas por índice de dificultad (IDB).  
-- 📊 **Radar chart**: Requisitos académicos vs. socioeconómicos por beca.  
-- 🗺️ **Mapa**: Cobertura de manutención por región.  
-- 📋 **Tabla dinámica**: Fechas de convocatoria y duración del proceso.
+### 1. **BECAS DE APOYO**
+- 📊 **Becas por carrera**: Ranking de programas más demandados
+- 🥧 **Becas por institución**: Distribución porcentual entre universidades
+- 📈 **Becarios por beca**: Comparación entre programas
+- 🎯 **Filtros**: Por año, categoría de becas y carrera específica
 
-  <img width="1331" height="786" alt="image" src="https://github.com/user-attachments/assets/e9454cbe-6593-4300-b663-dff812f56b97" />
-  <img width="1365" height="756" alt="image" src="https://github.com/user-attachments/assets/bd684f9e-ceb7-4c44-a6eb-f5b2c12a75c6" />
+### 2. **MAPA DE BECAS**
+- 🗺️ **Visualización geográfica**: Distribución de becas en territorio nacional e internacional
+- 📍 **Cobertura por lugar**: Distribución departamental
+- 🌎 **Becas internacionales**: Cobertura en países de América, Europa, Asia y Oceanía
+- 📋 **Lista de carreras**: Más de 200 programas académicos identificados
 
+### 3. **CARACTERIZACIÓN DE BECARIOS**
+- 👥 **Distribución por género**: Análisis de participación por sexo
+- 💰 **Estrato socioeconómico**: Distribución entre Pobre, Pobre Extremo y No Pobre
+- 🎓 **Total de estudiantes beneficiados**: Métricas generales
 
+### 4. **TOP DE UNIVERSIDADES BECAS**
+- 🏆 **Ranking de instituciones**: Top instituciones con mayor número de becas
+- 📊 **Análisis comparativo**: Universidades nacionales vs privadas vs institutos técnicos
 ---
-
 ## 🚀 Resultados Esperados  
-- Identificación de **qué becas son más accesibles** según perfil del estudiante.  
-- Cálculo del **índice de dificultad estandarizado (IDB)**.  
-- Dashboards que permiten explorar y comparar becas en tiempo real.  
-- Herramienta de apoyo para la toma de decisiones de estudiantes, familias y orientadores académicos.  
-
+- Identificación de **tendencias en la asignación de becas** por carrera, institución y región
+- Análisis del **perfil demográfico y socioeconómico** de los becarios peruanos
+- **Mapeo completo** de cobertura geográfica nacional e internacional
+- Identificación de **instituciones líderes** en captación de becarios
+- Dashboards interactivos que permiten **explorar y filtrar** información por múltiples dimensiones
+- Herramienta de **apoyo estratégico** para estudiantes, orientadores académicos y entidades educativas
 ---
-
 ## 📦 Inventario de Artefactos del Proyecto  
 | Código | Nombre del Documento | Tipo | Enlace |  
 |--------|----------------------|------|--------|  
@@ -110,22 +106,17 @@ IDB = (0.3 * Académicos) + (0.3 * Socioeconómicos) + (0.2 * Documentos) + (0.2
 | FD03   | Especificación de Requerimientos | PDF / DOCX | Ver |  
 | FD04   | Arquitectura de Software | PDF / DOCX | Ver |  
 | FD05   | Proyecto Final | PDF / DOCX | Ver |  
-| DASHBOARD | Dashboard Power BI | PBIX / Enlace | Ver |  
-| DATA  | Diccionario de Datos | MD / DOCX | Ver |  
-
 ---
-
 ## 📌 Roadmap Futuro  
-- Integrar más convocatorias y becas en la base de datos.  
-- Automatizar el cálculo del índice de dificultad con **actualización en tiempo real**.  
-- Incluir análisis predictivo: **probabilidad de éxito de postulación**.  
-- Ampliar el sistema a becas internacionales.  
-
+- Integrar datos de convocatorias 2026-2027 en tiempo real
+- Automatizar la actualización de dashboards con **pipelines ETL**
+- Incluir análisis predictivo: **proyección de demanda de becas por carrera**
+- Desarrollar módulo de **recomendación personalizada** según perfil del estudiante
+- Ampliar análisis a **becas de movilidad estudiantil** y programas de intercambio
+- Implementar **alertas automáticas** de nuevas convocatorias según perfil
 ---
-
 📎 **Video Explicativo del Proyecto (YouTube)**  
 🔗 *(Se añadirá una vez grabado)*  
 
 📊 **Dashboard en Power BI**  
-🔗 *(Se añadirá el enlace cuando esté publicado)*  
-
+🔗 [Ver Dashboard Interactivo](https://app.powerbi.com/onedrive/open?pbi_source=ODSPViewer&driveId=b!jP5Slrdq-060CjwVVNLKYo-ZmT31FnVOpI28pZdpOk3GkrdIXeEJSLQoy_8NEVqt&itemId=01WBF24WHAZF7TQGB63FC3U56VMNJYRHCA)
