@@ -52,15 +52,8 @@ Analizar y visualizar la **distribución, caracterización y cobertura** de beca
 - **Distribución por género**
 - **Distribución por estrato socioeconómico**
 - **Top instituciones con mayor número de becas**
-- **Carreras más demandadas**
 - **Cobertura geográfica nacional e internacional**
-### 4. Análisis Multidimensional
-- **Temporal**: Evolución de becas 2020-2025
-- **Geográfico**: Distribución por departamentos y países
-- **Institucional**: Universidades vs Institutos Técnicos vs Programas Internacionales
-- **Demográfico**: Caracterización de becarios
-- **Académico**: Análisis por tipo de programa y carrera
-### 5. Visualización en Power BI  
+### 4. Visualización en Power BI  
 - **Becas de Apoyo**: Análisis por carrera, institución y tipo de beca
 - **Mapa de Becas**: Distribución geográfica nacional e internacional
 - **Caracterización de Becarios**: Perfiles demográficos y socioeconómicos
@@ -81,7 +74,6 @@ Analizar y visualizar la **distribución, caracterización y cobertura** de beca
 ### 2. **MAPA DE BECAS**
 - 🗺️ **Visualización geográfica**: Distribución de becas en territorio nacional e internacional
 - 📍 **Cobertura por lugar**: Distribución departamental
-- 🌎 **Becas internacionales**: Cobertura en países de América, Europa, Asia y Oceanía
 - 📋 **Lista de carreras**: Más de 200 programas académicos identificados
 
 <img width="1320" height="709" alt="image" src="https://github.com/user-attachments/assets/bac072c9-f696-45cb-8210-821f5809098d" />
@@ -90,14 +82,13 @@ Analizar y visualizar la **distribución, caracterización y cobertura** de beca
 ### 3. **CARACTERIZACIÓN DE BECARIOS**
 - 👥 **Distribución por género**: Análisis de participación por sexo
 - 💰 **Estrato socioeconómico**: Distribución entre Pobre, Pobre Extremo y No Pobre
-- 🎓 **Total de estudiantes beneficiados**: Métricas generales
 
 <img width="1253" height="732" alt="image" src="https://github.com/user-attachments/assets/ac63a502-e249-41a7-af68-2300a4ec97c0" />
 
 
 ### 4. **TOP DE UNIVERSIDADES BECAS**
 - 🏆 **Ranking de instituciones**: Top instituciones con mayor número de becas
-- 📊 **Análisis comparativo**: Universidades nacionales vs privadas vs institutos técnicos
+- 🎓 **Total de estudiantes beneficiados**: Métricas generales
 
 <img width="1122" height="722" alt="image" src="https://github.com/user-attachments/assets/9ff6da4a-959a-4866-b402-dc3b071f52b1" />
 
