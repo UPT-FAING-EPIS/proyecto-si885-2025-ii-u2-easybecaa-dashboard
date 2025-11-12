@@ -75,20 +75,32 @@ Analizar y visualizar la **distribución, caracterización y cobertura** de beca
 - 📈 **Becarios por beca**: Comparación entre programas
 - 🎯 **Filtros**: Por año, categoría de becas y carrera específica
 
+<img width="1236" height="745" alt="image" src="https://github.com/user-attachments/assets/11f3784e-27aa-45e2-8e9e-2b1a19f7e87d" />
+
+
 ### 2. **MAPA DE BECAS**
 - 🗺️ **Visualización geográfica**: Distribución de becas en territorio nacional e internacional
 - 📍 **Cobertura por lugar**: Distribución departamental
 - 🌎 **Becas internacionales**: Cobertura en países de América, Europa, Asia y Oceanía
 - 📋 **Lista de carreras**: Más de 200 programas académicos identificados
 
+<img width="1320" height="709" alt="image" src="https://github.com/user-attachments/assets/bac072c9-f696-45cb-8210-821f5809098d" />
+
+
 ### 3. **CARACTERIZACIÓN DE BECARIOS**
 - 👥 **Distribución por género**: Análisis de participación por sexo
 - 💰 **Estrato socioeconómico**: Distribución entre Pobre, Pobre Extremo y No Pobre
 - 🎓 **Total de estudiantes beneficiados**: Métricas generales
 
+<img width="1253" height="732" alt="image" src="https://github.com/user-attachments/assets/ac63a502-e249-41a7-af68-2300a4ec97c0" />
+
+
 ### 4. **TOP DE UNIVERSIDADES BECAS**
 - 🏆 **Ranking de instituciones**: Top instituciones con mayor número de becas
 - 📊 **Análisis comparativo**: Universidades nacionales vs privadas vs institutos técnicos
+
+<img width="1122" height="722" alt="image" src="https://github.com/user-attachments/assets/9ff6da4a-959a-4866-b402-dc3b071f52b1" />
+
 ---
 ## 🚀 Resultados Esperados  
 - Identificación de **tendencias en la asignación de becas** por carrera, institución y región
